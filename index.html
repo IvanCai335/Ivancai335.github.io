@@ -7,22 +7,73 @@ I have also not provided this material to anyone else.
 MacID: Caii2
 -->
 <head>
-    <title>Ivan Cai Lab #1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Ivan Cai Website</title>
     <style>
-        
+        *{
+            background-color: #f6e0b5;
+        }
         body {font-family: Arial;}
-        header{padding: 10px;font-family: 'Times New Roman';display:flex;align-items: center;}
-        h1 {font-size: 30px;margin:0px} 
+        header{
+            height: 100px; 
+            padding: 0 2rem;
+            display:flex;
+            align-items: center; 
+            display: flex; 
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        header h1{font-size: clamp(50px, 5vw, 100px); font-family: 'Fredoka One';}
+        .header-links {
+            display: flex;
+            gap: 15px; /* Space between buttons */
+            margin-left: auto; /* Pushes buttons to the right */
+        }
+
+       .button{
+            display: inline-block;
+            padding: 12px 30px; 
+            font-size: 18px;
+            font-weight: bold;
+            color: #ccd5ae; 
+            background-color: black; 
+            border: none;
+            border-radius: 30px;
+            text-decoration: none; 
+            text-align: center;
+            transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+        /* Hover effect */
+        .button:hover {
+            color: white; /* Change color on hover */
+            text-decoration: underline;
+        }
+        h1 {font-size: 30px;margin: 0px; font-family: 'Fredoka One';} 
+        h2 {font-size: 25px; margin: 0px; font-family: 'Fredoka One';}
+        h3 {font-size: 20px; margin: 0px; font-family: 'Fredoka One';}
         img {width:100px; height:100px;margin-right:4ch;}
-        section {background-color: #f6e0b5;}
+   
 
     </style>
 </head>
 <body>
+    
     <header>
         <img src="image/picture.jpeg" alt="Ivan Cai Picture">
         <h1><i>Ivan Cai</i></h1>
+        <div class="header-links">
+            <a href="https://www.linkedin.com/in/ivancai2" target="_blank" class="button">LinkedIn</a>
+            <a href="https://www.apple.com/ca/" target="_blank" class="button">Contact Me</a> 
+        </div>
+        
     </header>
+    <introduction>
+        <h1>Welcome to my website!</h1>
+        <p>My name is Ivan Cai and I am a student at McMaster University studying Automation Engineering Technology with a specialization in Smart Systems. 
+            I am passionate about technology and how it can be used to improve the standard of living for people around the world. This year I am taking the
+            4IT3 course where we learn about databases and building websites using HTML. This webite will highlight
+            some of my experiences, hobbies and interests. Feel free to connect with me through LinkedIn and my other socials! I hope you enjoy learning more about me!</p>
+    </introduction>
     <section id="Education">
         <h2>Education</h2>
         <b>Pierre Elliott Trudeau Highschool</b>
@@ -49,7 +100,7 @@ MacID: Caii2
             <li>Designed and lead Arduino projects utilizing breadboards, LEDs, resistors and other electrical components to demonstrate electricity concepts </li>
             <li>Utilized effective communication engaging with 300 campers (aged 8-15) instructing and building projects relating to engineering, laws of motion, physics concepts, electricity, electronics and chemical reactions. </li>
         </ul>
-        <a href="https://www.thesteamproject.ca">https://www.thesteamproject.ca</a>
+        <a href="https://www.thesteamproject.ca" target="_blank">www.thesteamproject.ca</a>
         <br/>
         <b><i>Roboyantrix Inc Co-op</i></b>
         <ul>
@@ -57,7 +108,7 @@ MacID: Caii2
             <li>Assisted in the development of the company website through WordPress creating an advertising and e-commerce platform increasing sales of programs by 20%</li>
             <li>Streamlined courses by integrating video content building circuit boards utilizing controllers and sensors with Arduino hardware and software</li>
         </ul>
-        <a href="https://roboyantrix.com">https://roboyantrix.com</a>
+        <a href="https://roboyantrix.com" class="button" target="_blank">roboyantrix.com</a>
         <br/>
         <b><i>Gym-o-Gym</i></b>
         <ul>
@@ -65,7 +116,7 @@ MacID: Caii2
             <li>Research and produced STEM based projects that engaged summer camp participants aged 3-11, teaching the design and engineering process.</li>
             <li>Demonstrated patience, responsibility and attention to detail, being responsible for large cohorts of students, supervising and leading through projects and events</li>
         </ul>
-        <a href="https://gymogym.com">https://gymogym.com</a>
+        <a href="https://gymogym.com" class="button" target="_blank">gymogym.com</a>
     </section>
     <section id="Hobbies">
         <h2>Hobbies</h2>
